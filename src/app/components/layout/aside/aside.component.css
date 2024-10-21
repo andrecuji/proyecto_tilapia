@@ -1,0 +1,71 @@
+aside{
+    font-family: 'Poppins', sans-serif,bold;
+    padding: 20px;
+}
+
+  h3 {
+    color: #38b6ff;
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .graph-button i{
+    margin-right: 6px;
+  }
+
+  .graph-button {
+    background: linear-gradient(to right,#38b6ff, #44489a);
+    color: white;
+    padding: 18px 29px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 40px ;
+    cursor: pointer;
+    width: 78%;
+    margin-left: 5%;
+  }
+
+  .graph-button:hover {
+    background: linear-gradient(to right, #007bff, #44489a); /* Color de fondo al pasar el mouse */
+}
+
+  .sensor-list {
+    margin-top: -20px;
+    list-style-type: none;
+    padding: 15px;
+    color : #8a8a8a;
+  }
+
+  .sensor-list li {
+    margin: 25px 2px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+    .sensor-list li i {
+        margin-right: 15px;
+    }
+
+
+.linea-horizontal {
+    border-top: 0.5px solid #e8e8e8;
+    width: 75%;
+    margin: auto; /* Para centrar la línea */
+    margin-bottom: 20px; /* Aumenta el espacio entre la línea y el logo si es necesario */
+    margin-top: 95px; /* Aumenta el espacio entre la línea y el logo si es necesario */
+    border-radius: 5px; /* Ajusta el radio de la línea */
+}
+
+.logo-universidad {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Ajusta este margen según sea necesario */
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
