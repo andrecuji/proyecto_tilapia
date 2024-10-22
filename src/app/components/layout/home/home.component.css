@@ -44,7 +44,7 @@ h2 {
   grid-gap: 20px; /* Espaciado entre los sensores */
   padding: 10px;
   background-color: #e6e6e6; /* Fondo gris claro */
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .sensor {
