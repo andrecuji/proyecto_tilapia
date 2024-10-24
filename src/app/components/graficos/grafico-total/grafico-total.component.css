@@ -1,0 +1,36 @@
+::ng-deep body {
+    background-color:black;
+}
+
+  
+  
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: 1fr 1fr;    /* Dos filas iguales */
+    gap: 2px; /* Espacio entre las celdas */
+    height: 98vh;
+  }
+  
+  .temp1 {
+    grid-area: 1 / 1 / 2 / 2; /* Primera fila, primera columna */
+    border: 1px solid white;
+  }
+  
+  .temp2 {
+    grid-area: 1 / 2 / 2 / 3; /* Primera fila, segunda columna */
+    border: 1px solid white;
+  }
+  
+  .temp3 {
+    grid-area: 2 / 1 / 3 / 2; /* Segunda fila, primera columna */
+    border: 1px solid white;
+  }
+  
+  .temp4 {
+    grid-area: 2 / 2 / 3 / 3; /* Segunda fila, segunda columna */
+    border: 1px solid white;
+  }
+  

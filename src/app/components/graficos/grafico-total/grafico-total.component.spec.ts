@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GraficoComponent } from './grafico.component';
+import { GraficoTotalComponent } from './grafico-total.component';
 
-describe('GraficoComponent', () => {
-  let component: GraficoComponent;
-  let fixture: ComponentFixture<GraficoComponent>;
+describe('GraficoTotalComponent', () => {
+  let component: GraficoTotalComponent;
+  let fixture: ComponentFixture<GraficoTotalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GraficoComponent]
+      imports: [GraficoTotalComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GraficoComponent);
+    fixture = TestBed.createComponent(GraficoTotalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

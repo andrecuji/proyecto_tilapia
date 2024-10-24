@@ -1,0 +1,10 @@
+<div class="container" style="color: white;">
+    <h2>Temperatura</h2>
+    <p>{{ temperatureData.length > 0 ? temperatureData[temperatureData.length - 1] + ' °C' : 'No disponible' }}</p>
+    <div style="display: block;">
+      <canvas id="temperatureChart"></canvas>
+    </div>
+    <!-- Componente de notificación con plantilla personalizada -->
+    <p-toast key="customToast" position="top-right"></p-toast>
+  </div>
+  
