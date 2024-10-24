@@ -5,7 +5,7 @@ aside{
 
   h3 {
     color: #38b6ff;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -13,21 +13,22 @@ aside{
     margin-right: 6px;
   }
 
-  .graph-button {
-    background: linear-gradient(to right,#38b6ff, #44489a);
-    color: white;
-    padding: 18px 29px;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    margin-bottom: 10px;
-    margin-top: 40px ;
-    cursor: pointer;
-    width: 78%;
-    margin-left: 5%;
-  }
+    .graph-button {
+      background: linear-gradient(to right,#38b6ff, #44489a);
+      color: white;
+      padding: 18px 29px;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 40px ;
+      cursor: pointer;
+      width: auto;
+      margin-left: 5%;
+    }
 
   .graph-button:hover {
     background: linear-gradient(to right, #007bff, #44489a); /* Color de fondo al pasar el mouse */
@@ -67,5 +68,7 @@ aside{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px; /* Ajusta este margen según sea necesario */
-    width: 80%; /* Ajusta el ancho según sea necesario */
+    width: 80%;
+   /* height: auto;
+   /*object-fit: contain; /* Ajusta el tamaño de la imagen */
 }

@@ -21,7 +21,8 @@ h1 {
     display: flex;
     align-items: center; /* Centra verticalmente el ícono y el texto */
     font-size: 19px; /* Tamaño de fuente */
-    margin-left: 50px; /* Espacio a la izquierda del botón */
+    font-weight: bold;
+    margin-left: 70px; /* Espacio a la izquierda del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
