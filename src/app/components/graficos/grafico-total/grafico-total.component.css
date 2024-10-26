@@ -8,7 +8,7 @@ main {
     height: 98vh;
     padding: 10px; /* Un poco de padding para que no se tope con los borde */
     box-sizing: border-box;
-    background-color: black;
+    background-color: #252525;
 }
 
 .temp1, .temp2, .temp3, .temp4 {

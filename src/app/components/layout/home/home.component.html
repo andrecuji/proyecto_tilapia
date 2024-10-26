@@ -1,27 +1,11 @@
 <main>
-    <content>
-      <div class="sensor-container">
-        <div class="sensor">
-          <h2>Sensor de pH</h2>
-          <p>{{ phValue !== null ? phValue + ' pH' : 'No disponible' }}</p>
-        </div>
+  <section>
   
-        <div class="sensor">
-          <h2>Oxígeno disuelto</h2>
-          <p>{{ oxygenDissolved !== null ? oxygenDissolved.toFixed(2) + ' mg/L' : 'No disponible' }}</p>
-        </div>
-  
-        <div class="sensor">
-          <h2>Sensor de Amoniaco</h2>
-         
-        </div>
-  
-        <div class="sensor">
-          <h2>Sensor Temperatura</h2>
-          <p>{{ temperatureValue !== null ? temperatureValue + ' °C' : 'No disponible' }}</p>
-        </div>
-      </div>
-    </content>
+
+      
+          <router-outlet></router-outlet>
+
+   </section>
   
     <aside>
       <app-aside></app-aside>

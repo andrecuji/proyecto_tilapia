@@ -14,7 +14,7 @@ export class HeaderComponent {
 
   IrAUtiles():void{
     console.log("ir a utiles");
-    this.router.navigate(['/utiles']);
+    this.router.navigate(['/home/utiles']);
    }
 
 }

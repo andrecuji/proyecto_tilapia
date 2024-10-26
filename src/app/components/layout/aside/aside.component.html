@@ -5,17 +5,21 @@
     </button>
   
     <ul class="sensor-list">
-      <li>
-        <i class="fas fa-tint"></i> PH
+      <li (click)="IrGraficosPh()">
+        <i class="fas fa-tint" ></i> PH
       </li>
-      <li>
+      <li (click)="IrGraficosOxigeno()">
         <i class="fas fa-leaf"></i> O2
       </li>
-      <li>
+      <li (click)="IrGraficosAmmoniaco()">
         <i class="fas fa-cloud"></i> Amoniaco
       </li>
-      <li>
+      <li (click)="IrGraficosTemperatura()">
         <i class="fas fa-thermometer-half"></i> Temperatura
+      </li>
+
+      <li (click)="IrDatosTotal()">
+        <i class="fas fa-chart-line"></i> Datos Totales
       </li>
     </ul>
    

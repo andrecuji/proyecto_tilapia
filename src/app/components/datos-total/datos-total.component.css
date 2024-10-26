@@ -1,0 +1,22 @@
+.sensor-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    height: 750px;
+    grid-gap: 20px; /* Espaciado entre los sensores */
+    padding: 10px;
+
+  
+    
+  
+  }
+  
+  .sensor {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    min-width: 470px;
+    min-height: 200px;
+  }
