@@ -4,7 +4,9 @@ header {
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: space-between; /* Espacio entre el título y el botón */
     padding: 25px; /* Espaciado interno del header */
+    margin-top: -15px;
 }
+
 
 h1 {
     color: #ffffff;

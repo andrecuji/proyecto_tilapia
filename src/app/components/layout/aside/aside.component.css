@@ -59,7 +59,7 @@ aside{
     width: 75%;
     margin: auto; /* Para centrar la línea */
     margin-bottom: 20px; /* Aumenta el espacio entre la línea y el logo si es necesario */
-    margin-top: 95px; /* Aumenta el espacio entre la línea y el logo si es necesario */
+    margin-top: 10px; /* Aumenta el espacio entre la línea y el logo si es necesario */
     border-radius: 5px; /* Ajusta el radio de la línea */
 }
 
