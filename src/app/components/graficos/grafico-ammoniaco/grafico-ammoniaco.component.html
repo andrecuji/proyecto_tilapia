@@ -1,1 +1,9 @@
-<h2>amoniaco</h2>
+<div class="container" style="color: white;">
+    <h2>Amoníaco</h2>
+    <p>{{ ammoniaData.length > 0 ? ammoniaData[ammoniaData.length - 1] + ' mg/L' : 'No disponible' }}</p>
+    <div style="display: block;">
+      <canvas id="ammoniaChart"></canvas>
+    </div>
+    <!-- Componente de notificación con plantilla personalizada -->
+    <p-toast key="customToast" position="top-right"></p-toast>
+</div>

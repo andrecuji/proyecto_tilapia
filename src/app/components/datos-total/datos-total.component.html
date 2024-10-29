@@ -1,21 +1,35 @@
 <div class="sensor-container">
-    <div class="sensor">
-      <h2>Sensor de pH</h2>
-      <p>{{ phValue !== null ? phValue + ' pH' : 'No disponible' }}</p>
-    </div>
-
-    <div class="sensor">
-      <h2>Oxígeno disuelto</h2>
-      <p>{{ oxygenDissolved !== null ? oxygenDissolved.toFixed(2) + ' mg/L' : 'No disponible' }}</p>
-    </div>
-
-    <div class="sensor">
-      <h2>Sensor de Amoniaco</h2>
-     
-    </div>
-
-    <div class="sensor">
-      <h2>Sensor Temperatura</h2>
-      <p>{{ temperatureValue !== null ? temperatureValue + ' °C' : 'No disponible' }}</p>
-    </div>
+  <div class="sensor">
+    <h2>Sensor de pH</h2>
+    <p>{{ phValue !== null ? phValue + ' pH' : 'No disponible' }}</p>
   </div>
+
+  <div class="sensor">
+    <h2>Oxígeno disuelto</h2>
+    <p>{{ oxygenDissolved !== null ? oxygenDissolved.toFixed(2) + ' mg/L' : 'No disponible' }}</p>
+  </div>
+
+  <div class="sensor">
+    <h2>Amoniaco</h2>
+    <div>
+      <label for="fishCount">Cantidad de peces:</label>
+      <input id="fishCount" type="number" [(ngModel)]="fishCount" />
+
+      <label for="foodAmount">Cantidad de comida (g):</label>
+      <input id="foodAmount" type="number" [(ngModel)]="foodAmount" />
+
+      <label for="waterVolume">Volumen de agua (L):</label>
+      <input id="waterVolume" type="number" [(ngModel)]="waterVolume" />
+
+      <button (click)="calculateAmmonia()">Calcular Amoniaco</button>
+      <button (click)="clearAmmoniaHistory()">Eliminar Historial de Amoniaco</button> <!-- Botón para eliminar historial -->
+
+    </div>
+    <p>{{ ammoniaLevel !== null ? ammoniaLevel.toFixed(2) + ' mg/L' : 'No disponible' }}</p>
+  </div>
+
+  <div class="sensor">
+    <h2>Sensor de Temperatura</h2>
+    <p>{{ temperatureValue !== null ? temperatureValue + ' °C' : 'No disponible' }}</p>
+  </div>
+</div>

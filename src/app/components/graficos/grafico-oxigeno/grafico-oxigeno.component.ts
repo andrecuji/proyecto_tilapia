@@ -83,13 +83,15 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
   fetchSensorData(): void {
     this.sensorService.getPh().subscribe(data => {
       this.phValue = data.ph;
-      this.calculateAndDisplayOxygen();
+ 
     });
 
     this.sensorService.getTemperature().subscribe(data => {
       this.temperatureValue = data.temperature;
       //this.calculateAndDisplayOxygen();
     });
+
+    this.calculateAndDisplayOxygen();
   }
 
   calculateAndDisplayOxygen(): void {
