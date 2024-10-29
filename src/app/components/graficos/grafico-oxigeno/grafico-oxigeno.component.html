@@ -1,1 +1,9 @@
-<p>grafico-oxigeno works!</p>
+<div class="container text-white">
+    <h2>Oxígeno Disuelto</h2>
+    <p>{{ oxygenDissolvedData.length > 0 ? oxygenDissolvedData[oxygenDissolvedData.length - 1].toFixed(2) + ' mg/L' : 'No disponible' }}</p>
+    <div style="display: block;">
+      <canvas id="oxygenChart"></canvas>
+    </div>
+    <p-toast key="customToast" position="top-right"></p-toast>
+</div>
+
