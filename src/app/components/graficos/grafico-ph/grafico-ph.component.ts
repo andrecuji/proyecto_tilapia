@@ -94,7 +94,7 @@ export class GraficoPhComponent implements OnInit, OnDestroy {
 
   fetchPhData(): void {
     this.sensorService.getPh().subscribe(data => {
-      if (this.lastPh === null || data.ph !== this.lastPh) {
+      //if (this.lastPh === null || data.ph !== this.lastPh) {
         this.lastPh = data.ph;
         this.phData.push(data.ph);
         this.chartLabels.push(new Date().toLocaleTimeString());
@@ -105,7 +105,7 @@ export class GraficoPhComponent implements OnInit, OnDestroy {
         if ( data.ph >= 10) { // Umbrales críticos, ajusta según sea necesario
           this.sendRiskNotification(data.ph);
         }
-      }
+      //}
     });
   }
 

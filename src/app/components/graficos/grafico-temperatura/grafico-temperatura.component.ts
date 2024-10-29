@@ -95,7 +95,7 @@ export class GraficoTemperaturaComponent implements OnInit, OnDestroy {
 
   fetchTemperatureData(): void {
     this.sensorService.getTemperature().subscribe(data => {
-      if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
+      //if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
         this.lastTemperature = data.temperature;
         this.temperatureData.push(data.temperature);
         this.chartLabels.push(new Date().toLocaleTimeString());
@@ -104,7 +104,7 @@ export class GraficoTemperaturaComponent implements OnInit, OnDestroy {
 
         // Verificar si la temperatura alcanza los 50 grados para enviar una notificación de riesgo
         
-      }
+      //}
       if (data.temperature >=40) {
         this.sendRiskNotification(data.temperature);
       }
@@ -128,8 +128,6 @@ export class GraficoTemperaturaComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (this.temperatureSubscription) {
-      this.temperatureSubscription.unsubscribe();
-    }
+    
   }
 }

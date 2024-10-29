@@ -98,7 +98,7 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
       const pH = this.phValue;
       const oxygenDissolved = (14.6 - 0.39 * T + 0.008 * T ** 2) * (1 + 0.02 * (7 - pH));
 
-      if (this.lastOxygenDissolved === null || oxygenDissolved !== this.lastOxygenDissolved) {
+      //if (this.lastOxygenDissolved === null || oxygenDissolved !== this.lastOxygenDissolved) {
         this.lastOxygenDissolved = oxygenDissolved;
         this.oxygenDissolvedData.push(oxygenDissolved);
         this.chartLabels.push(new Date().toLocaleTimeString());
@@ -107,7 +107,7 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
         if (oxygenDissolved < 2) {
           this.sendRiskNotification(oxygenDissolved);
         }
-      }
+      //}
     }
   }
 
