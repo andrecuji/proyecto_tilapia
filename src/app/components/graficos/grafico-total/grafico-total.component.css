@@ -13,7 +13,7 @@ main {
 
 .temp1, .temp2, .temp3, .temp4 {
     border: 2px solid white; /* Bordes más visibles */
-    border-radius: 5px; /* Bordes redondeados para mejorar la estética */
+    border-radius: 15px; /* Bordes redondeados para mejorar la estética */
     padding: 5px;
     box-sizing: border-box;
 }

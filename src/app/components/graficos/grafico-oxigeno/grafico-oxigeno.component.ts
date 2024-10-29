@@ -76,7 +76,7 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
   }
 
   startDataUpdates(): void {
-    this.dataSubscription = interval(5000)
+    this.dataSubscription = interval(4000)
       .subscribe(() => this.fetchSensorData());
   }
 
@@ -88,7 +88,7 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
 
     this.sensorService.getTemperature().subscribe(data => {
       this.temperatureValue = data.temperature;
-      this.calculateAndDisplayOxygen();
+      //this.calculateAndDisplayOxygen();
     });
   }
 

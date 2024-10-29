@@ -89,7 +89,7 @@ export class GraficoTemperaturaComponent implements OnInit, OnDestroy {
   }
 
   startTemperatureUpdates(): void {
-    this.temperatureSubscription = interval(5000)
+    this.temperatureSubscription = interval(4000)
       .subscribe(() => this.fetchTemperatureData());
   }
 

@@ -88,7 +88,7 @@ export class GraficoPhComponent implements OnInit, OnDestroy {
   }
 
   startPhUpdates(): void {
-    this.phSubscription = interval(5000)
+    this.phSubscription = interval(4000)
       .subscribe(() => this.fetchPhData());
   }
 
@@ -102,7 +102,7 @@ export class GraficoPhComponent implements OnInit, OnDestroy {
         console.log("pH actualizado:", data.ph);
 
         // Verificar si el pH alcanza un nivel crítico para enviar una notificación
-        if ( data.ph >= 10) { // Umbrales críticos, ajusta según sea necesario
+        if ( data.ph >= 20) { // Umbrales críticos, ajusta según sea necesario
           this.sendRiskNotification(data.ph);
         }
       //}
