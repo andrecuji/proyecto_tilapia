@@ -90,6 +90,8 @@ export class GraficoOxigenoComponent implements OnInit, OnDestroy {
       this.temperatureValue = data.temperature;
       //this.calculateAndDisplayOxygen();
     });
+
+   
   }
 
   calculateAndDisplayOxygen(): void {
