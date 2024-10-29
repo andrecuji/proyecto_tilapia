@@ -20,6 +20,7 @@ export class DatosTotalComponent implements OnInit, OnDestroy {
   oxygenDissolved: number | null = null;
   ammoniaLevel: number | null = null;
   ammoniaHistory: number[] = []; // Array para almacenar los niveles de amoníaco
+  lastAmmoniaLevel: number | null = null; // Variable para el último valor de amoníaco
   private temperatureSubscription!: Subscription;
 
   // Variables para el cálculo de amoníaco
@@ -34,6 +35,9 @@ export class DatosTotalComponent implements OnInit, OnDestroy {
     const savedHistory = localStorage.getItem('ammoniaHistory');
     if (savedHistory) {
       this.ammoniaHistory = JSON.parse(savedHistory);
+      if (this.ammoniaHistory.length > 0) {
+        this.lastAmmoniaLevel = this.ammoniaHistory[this.ammoniaHistory.length - 1]; // Obtener el último valor
+      }
     }
 
     this.temperatureSubscription = interval(1000).subscribe(() => this.fetchSensorData());
@@ -66,15 +70,16 @@ export class DatosTotalComponent implements OnInit, OnDestroy {
     if (this.ammoniaLevel !== null) {
       this.ammoniaHistory.push(this.ammoniaLevel); // Guardar el nivel de amoníaco en el historial
       localStorage.setItem('ammoniaHistory', JSON.stringify(this.ammoniaHistory)); // Guardar en localStorage
+      this.lastAmmoniaLevel = this.ammoniaLevel; // Actualizar el último nivel de amoníaco
     }
   }
 
   clearAmmoniaHistory(): void {
     this.ammoniaHistory = []; // Vaciar el array del historial
+    this.lastAmmoniaLevel = null; // Resetear el último valor
     localStorage.removeItem('ammoniaHistory'); // Eliminar del localStorage
   }
   
-
   ngOnDestroy(): void {
     if (this.temperatureSubscription) {
       this.temperatureSubscription.unsubscribe();

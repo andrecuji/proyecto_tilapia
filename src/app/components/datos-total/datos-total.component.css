@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     grid-template-rows: repeat(2, 1fr); /* Dos filas iguales */
-    height: 850px;
+    height: 900px;
     grid-gap: 20px; /* Espaciado entre los sensores */
     padding: 10px;
 

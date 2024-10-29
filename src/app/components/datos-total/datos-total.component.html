@@ -23,9 +23,9 @@
 
       <button (click)="calculateAmmonia()">Calcular Amoniaco</button>
       <button (click)="clearAmmoniaHistory()">Eliminar Historial de Amoniaco</button> <!-- Botón para eliminar historial -->
-
     </div>
     <p>{{ ammoniaLevel !== null ? ammoniaLevel.toFixed(2) + ' mg/L' : 'No disponible' }}</p>
+    <p *ngIf="lastAmmoniaLevel !== null">Último valor almacenado: {{ lastAmmoniaLevel.toFixed(2) + ' mg/L' }}</p>
   </div>
 
   <div class="sensor">
